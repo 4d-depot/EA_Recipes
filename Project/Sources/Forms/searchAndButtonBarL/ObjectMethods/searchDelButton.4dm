@@ -1,0 +1,2 @@
+Form:C1466.searchText:=""
+CALL SUBFORM CONTAINER:C1086(-1)

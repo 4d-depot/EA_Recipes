@@ -1,0 +1,291 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 1214,
+	"markerBreak": 1214,
+	"markerFooter": 1214,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"mainRec": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 927,
+					"height": 755,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"ingredientBG": {
+					"type": "rectangle",
+					"top": 272,
+					"left": 20,
+					"width": 400,
+					"height": 341,
+					"fill": "#E6F0FF",
+					"stroke": "transparent",
+					"borderRadius": 10
+				},
+				"TotalTimeLabel": {
+					"type": "text",
+					"top": 228,
+					"left": 629,
+					"width": 109,
+					"height": 23,
+					"stroke": "#444444",
+					"class": "Font22",
+					"textAlign": "center",
+					"text": "Total Time"
+				},
+				"ServingsLabel": {
+					"type": "text",
+					"top": 228,
+					"left": 769,
+					"width": 109,
+					"height": 23,
+					"stroke": "#444444",
+					"class": "Font22",
+					"textAlign": "center",
+					"text": "Servings"
+				},
+				"CuisineLabel": {
+					"type": "text",
+					"top": 228,
+					"left": 456,
+					"width": 109,
+					"height": 23,
+					"stroke": "#444444",
+					"class": "Font22",
+					"textAlign": "center",
+					"text": "Cuisine"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 180,
+					"left": 440,
+					"width": 469,
+					"sizingX": "grow",
+					"stroke": "#DDDDDD"
+				},
+				"ingredientsLabel": {
+					"type": "text",
+					"top": 291,
+					"left": 40,
+					"width": 149,
+					"height": 30,
+					"stroke": "#EE0000",
+					"class": "Font24",
+					"text": "Ingredients"
+				},
+				"CookingStepsLabel": {
+					"type": "text",
+					"top": 291,
+					"left": 440,
+					"width": 189,
+					"height": 30,
+					"stroke": "#EE0000",
+					"class": "Font24",
+					"text": "Cooking Steps"
+				},
+				"FieldDescription": {
+					"type": "input",
+					"top": 86,
+					"left": 440,
+					"width": 470,
+					"height": 87,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.ent.Description",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FieldCuisine": {
+					"type": "input",
+					"top": 203,
+					"left": 436,
+					"width": 149,
+					"height": 23,
+					"dataSource": "Form:C1466.ent.Cuisine",
+					"stroke": "#EE0000",
+					"class": "Font22",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FieldServings": {
+					"type": "input",
+					"top": 203,
+					"left": 778,
+					"width": 89,
+					"height": 23,
+					"dataSource": "Form:C1466.ent.Servings",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#EE0000",
+					"class": "Font22",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cookingTimePrn_t": {
+					"type": "input",
+					"top": 203,
+					"left": 607,
+					"width": 149,
+					"height": 23,
+					"dataSource": "Form:C1466.CookTime",
+					"class": "Font22",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ingredientsPrn_t": {
+					"type": "input",
+					"top": 337,
+					"left": 40,
+					"width": 359,
+					"height": 217,
+					"dataSource": "Form:C1466.ingredients",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cookingStepsPrn_t": {
+					"type": "input",
+					"top": 337,
+					"left": 440,
+					"width": 449,
+					"height": 264,
+					"dataSource": "Form:C1466.CookingSteps",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 260,
+					"left": 440,
+					"width": 469,
+					"sizingX": "grow",
+					"stroke": "#DDDDDD"
+				},
+				"FieldPhoto": {
+					"type": "input",
+					"top": 26,
+					"left": 20,
+					"width": 396,
+					"height": 225,
+					"dataSource": "Form:C1466.ent.Photo",
+					"dataSourceTypeHint": "picture",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 13,
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"recipeTitle": {
+					"type": "input",
+					"top": 26,
+					"left": 440,
+					"width": 449,
+					"height": 60,
+					"dataSource": "Form:C1466.ent.Title",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 36,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"noRecipeText": {
+					"type": "text",
+					"top": 252,
+					"left": 0,
+					"width": 927,
+					"height": 45,
+					"visibility": "hidden",
+					"textAlign": "center",
+					"fontFamily": "helvetica light",
+					"fontSize": 36,
+					"text": "No recipe selected"
+				}
+			}
+		}
+	]
+}

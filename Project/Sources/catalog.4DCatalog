@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="64679D88AACD44C8BE8C8D2B9B24E390" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Recipes" uuid="E49589C96E1C4717AEE5C1CED1644E86" id="3">
+		<field name="ID" uuid="7233566CF0334032991B53AE58CDDA74" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Title" uuid="9CB2A479EE5645EB90EAEF389215A6B7" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Category" uuid="212F1F5F618F4F518169F51E0A28C740" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Servings" uuid="75D34AF3F7684E5385C322F45932F414" type="4" never_null="true" id="4"/>
+		<field name="CookTime" uuid="201C44AEB4F94A0BB39AC650FE171A38" type="9" never_null="true" id="5"/>
+		<field name="Photo" uuid="3A8EFC4A41604E5C86EF4A292018F514" type="12" never_null="true" id="6"/>
+		<field name="Cuisine" uuid="0EB5F69442A44B72931AC290DBC1673C" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="Description" uuid="8DC51533D6FD4F52A0FC6967C4BE0118" type="10" never_null="true" id="8"/>
+		<field name="PhotoThumbnail" uuid="BC2C69EBD51242ACA659578BE5E6572D" type="12" never_null="true" id="9"/>
+		<field name="Favorites" uuid="C23F47B854524F7FB44AD7D615DFDD71" type="1" never_null="true" id="10"/>
+		<field name="CookingSteps" uuid="E1140A96BB5D4423A00531968DB51856" type="21" blob_switch_size="2147483647" never_null="true" id="11"/>
+		<primary_key field_name="ID" field_uuid="7233566CF0334032991B53AE58CDDA74"/>
+		<table_extra input_form="Input1" output_form="recipeList">
+			<editor_table_info displayable_fields_count="13">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="0.453125" top="25.85546875" width="191.19140625" height="332.296875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Ingredients" uuid="508C1C6D06EF4C83A68427122DB2628A" id="4">
+		<field name="ID" uuid="65D77A31A8BC428EA299873D980A6C14" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="RecipesID" uuid="0AC9B3CD70EA4CD3AEBA824B7336DA7A" type="4" never_null="true" id="2"/>
+		<field name="Item" uuid="0518165CA27E43859DDF4B02BFD74072" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Quantity" uuid="73C3F882BBD64929B59D4A9C300BE41B" type="6" never_null="true" id="4"/>
+		<field name="Unit" uuid="81ECF8C740C44DA183D494FE831C2ED6" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="Description" uuid="D9F0CEA0CA67402595AE5EF4FE1FAB41" type="10" limiting_length="255" never_null="true" id="6"/>
+		<primary_key field_name="ID" field_uuid="65D77A31A8BC428EA299873D980A6C14"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="8">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="335.55078125" top="63.703125" width="157.16015625" height="215.03125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="A7E8C3E6D4724F289835BB4B0A54E89A" name_Nto1="recipe" name_1toN="ingredients" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="0AC9B3CD70EA4CD3AEBA824B7336DA7A" name="RecipesID">
+				<table_ref uuid="508C1C6D06EF4C83A68427122DB2628A" name="Ingredients"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="7233566CF0334032991B53AE58CDDA74" name="ID">
+				<table_ref uuid="E49589C96E1C4717AEE5C1CED1644E86" name="Recipes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="06DDEB19649B4084A0F15D7A8D149022" type="1">
+		<field_ref uuid="65D77A31A8BC428EA299873D980A6C14" name="ID">
+			<table_ref uuid="508C1C6D06EF4C83A68427122DB2628A" name="Ingredients"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="35A5D247605A4C6ABFAD5F7C95BF60CC" type="7">
+		<field_ref uuid="7233566CF0334032991B53AE58CDDA74" name="ID">
+			<table_ref uuid="E49589C96E1C4717AEE5C1CED1644E86" name="Recipes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="3FEA0BA4584B423DBB4849FE25A7A841" type="7">
+		<field_ref uuid="0AC9B3CD70EA4CD3AEBA824B7336DA7A" name="RecipesID">
+			<table_ref uuid="508C1C6D06EF4C83A68427122DB2628A" name="Ingredients"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="E52676EC1DD54440B756350D9E8455B1" type="7">
+		<field_ref uuid="0518165CA27E43859DDF4B02BFD74072" name="Item">
+			<table_ref uuid="508C1C6D06EF4C83A68427122DB2628A" name="Ingredients"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="Recipes" structure_file_name="Recipes" data_file_path=":Recipes.4DD" last_opening_mode="1">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

@@ -1,0 +1,218 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "Recipes",
+	"windowMinWidth": 1282,
+	"windowMinHeight": 733,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onOutsideCall"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 1282,
+					"height": 733,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture2.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"list_SF": {
+					"type": "subform",
+					"top": 72,
+					"left": 337,
+					"width": 912,
+					"height": 607,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "undefined",
+					"table": 3,
+					"detailForm": "recipeInput",
+					"listForm": "recipeList",
+					"focusable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"selectionMode": "single",
+					"printFrame": "variable",
+					"borderStyle": "system",
+					"method": "ObjectMethods/list_SF.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 678,
+					"left": 336,
+					"width": 930,
+					"height": 39,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#555555"
+				},
+				"recipeCount": {
+					"type": "input",
+					"top": 690,
+					"left": 360,
+					"width": 894,
+					"height": 17,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.recipeCount",
+					"textAlign": "right",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"previewRect": {
+					"type": "rectangle",
+					"top": 685,
+					"left": 342,
+					"width": 116,
+					"height": 27,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"fill": "transparent",
+					"stroke": "#777777",
+					"strokeWidth": 0.1
+				},
+				"Text": {
+					"type": "text",
+					"top": 691,
+					"left": 374,
+					"width": 81,
+					"height": 20,
+					"sizingY": "move",
+					"class": "Font12",
+					"text": "DETAIL VIEW"
+				},
+				"OffDetail": {
+					"type": "picture",
+					"top": 690,
+					"left": 349,
+					"width": 16,
+					"height": 16,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/OffDetail.png"
+				},
+				"OnDetail": {
+					"type": "picture",
+					"top": 690,
+					"left": 349,
+					"width": 16,
+					"height": 16,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/OnDetail.png"
+				},
+				"previewCb": {
+					"type": "checkbox",
+					"top": 687,
+					"left": 342,
+					"width": 115,
+					"height": 24,
+					"sizingY": "move",
+					"class": "Font21",
+					"stroke": "#444444",
+					"focusable": false,
+					"style": "custom",
+					"method": "ObjectMethods/previewCb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"detail_SF": {
+					"type": "subform",
+					"top": 72,
+					"left": 337,
+					"width": 913,
+					"height": 607,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.recipe",
+					"detailForm": "recipePreview",
+					"focusable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "system"
+				},
+				"toolbar_SF": {
+					"type": "subform",
+					"top": 15,
+					"left": 337,
+					"width": 927,
+					"height": 56,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.toolbar",
+					"detailForm": "searchAndButtonBarL",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "system",
+					"method": "ObjectMethods/toolbar_SF.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"sidebar_SF": {
+					"type": "subform",
+					"top": 15,
+					"left": 15,
+					"width": 310,
+					"height": 703,
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.sidebar",
+					"detailForm": "recipesSideBar",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/sidebar_SF.4dm"
+				}
+			}
+		}
+	]
+}

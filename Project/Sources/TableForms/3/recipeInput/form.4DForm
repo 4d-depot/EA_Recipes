@@ -1,0 +1,1087 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 0,
+					"width": 929,
+					"height": 645,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 92,
+					"left": 160,
+					"width": 89,
+					"height": 17,
+					"class": "Font23",
+					"textAlign": "center",
+					"text": "Photo"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 92,
+					"left": 260,
+					"width": 195,
+					"height": 23,
+					"class": "Font23",
+					"textAlign": "center",
+					"text": "Title &  Description"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 92,
+					"left": 465,
+					"width": 133,
+					"height": 23,
+					"class": "Font23",
+					"textAlign": "center",
+					"text": "Ingredients"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 92,
+					"left": 608,
+					"width": 162,
+					"height": 23,
+					"class": "Font23",
+					"textAlign": "center",
+					"text": "Cooking Steps"
+				},
+				"SelectedIndicator": {
+					"type": "rectangle",
+					"top": 118,
+					"left": 155,
+					"width": 99,
+					"height": 6,
+					"fill": "#D77A00",
+					"stroke": "transparent"
+				},
+				"bPage1": {
+					"type": "button",
+					"top": 89,
+					"left": 155,
+					"width": 99,
+					"height": 28,
+					"display": false,
+					"method": "ObjectMethods/bPage1.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"bPage2": {
+					"type": "button",
+					"top": 89,
+					"left": 260,
+					"width": 195,
+					"height": 28,
+					"display": false,
+					"method": "ObjectMethods/bPage2.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"bPage3": {
+					"type": "button",
+					"top": 89,
+					"left": 465,
+					"width": 133,
+					"height": 28,
+					"display": false,
+					"method": "ObjectMethods/bPage3.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"bPage4": {
+					"type": "button",
+					"top": 89,
+					"left": 608,
+					"width": 162,
+					"height": 28,
+					"display": false,
+					"method": "ObjectMethods/bPage4.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 173,
+					"left": 58,
+					"width": 803,
+					"height": 453,
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"SelectedIndicator1": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 58,
+					"width": 804,
+					"height": 1,
+					"fill": "#D77A00",
+					"stroke": "transparent"
+				},
+				"Line": {
+					"type": "line",
+					"top": 19,
+					"left": 25,
+					"width": 10,
+					"height": 10,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 28,
+					"left": 25,
+					"width": 10,
+					"height": 10,
+					"stroke": "#AAAAAA"
+				},
+				"bPrev": {
+					"type": "button",
+					"top": 6,
+					"left": 14,
+					"width": 35,
+					"height": 43,
+					"sizingX": "move",
+					"class": "Font25",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/bPrev.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 6,
+					"left": 56,
+					"width": 35,
+					"height": 43,
+					"sizingX": "move",
+					"class": "Font25",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 19,
+					"left": 70,
+					"width": 10,
+					"height": 10,
+					"stroke": "#AAAAAA"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 28,
+					"left": 70,
+					"width": 10,
+					"height": 10,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"bFavorite": {
+					"type": "checkbox",
+					"top": 134,
+					"left": 773,
+					"width": 85,
+					"height": 30,
+					"dataSource": "bFavorite",
+					"class": "default",
+					"focusable": false,
+					"text": "Favorite",
+					"icon": "var:0",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/bFavorite.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bClose": {
+					"type": "button",
+					"top": 11,
+					"left": 824,
+					"width": 85,
+					"height": 33,
+					"sizingX": "move",
+					"action": "cancel",
+					"text": "CLOSE",
+					"class": "default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 10,
+					"left": 813,
+					"height": 35,
+					"sizingX": "move",
+					"strokeDashArray": "1 1"
+				},
+				"bSave1": {
+					"type": "button",
+					"top": 11,
+					"left": 717,
+					"width": 85,
+					"height": 33,
+					"text": "SAVE",
+					"class": "default",
+					"method": "ObjectMethods/bSave1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Field": {
+					"type": "input",
+					"top": 175,
+					"left": 60,
+					"width": 800,
+					"height": 450,
+					"dataSource": "Form:C1466.ent.Photo",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/Field.4dm",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 186,
+					"left": 66,
+					"width": 788,
+					"height": 23,
+					"class": "Font23",
+					"textAlign": "center",
+					"text": "Drag & drop a picture in this area or right click and choose Import Picture"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 537,
+					"left": 216,
+					"width": 150,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"textAlign": "right",
+					"text": "Total Time (H:M)"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 577,
+					"left": 216,
+					"width": 150,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"textAlign": "right",
+					"text": "Servings"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 493,
+					"left": 216,
+					"width": 150,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"textAlign": "right",
+					"text": "Cuisine"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 216,
+					"left": 165,
+					"width": 612,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.ent.Title",
+					"class": "default",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 277,
+					"left": 165,
+					"width": 612,
+					"height": 144,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.ent.Description",
+					"class": "default",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 455,
+					"left": 378,
+					"width": 341,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.Category",
+					"stroke": "#515151",
+					"class": "default",
+					"placeholder": " Not specified",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Recipe Categories1"
+					},
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 495,
+					"left": 378,
+					"width": 341,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.Cuisine",
+					"stroke": "#515151",
+					"class": "default",
+					"placeholder": " Not specified",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Cuisines1"
+					},
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"hour_l": {
+					"type": "input",
+					"top": 537,
+					"left": 378,
+					"width": 41,
+					"height": 21,
+					"dataSource": "Form:C1466.hour",
+					"dataSourceTypeHint": "number",
+					"stroke": "#515151",
+					"class": "default",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "custom",
+					"method": "ObjectMethods/hour_l.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"min_l": {
+					"type": "input",
+					"top": 537,
+					"left": 438,
+					"width": 41,
+					"height": 21,
+					"dataSource": "Form:C1466.min",
+					"dataSourceTypeHint": "number",
+					"stroke": "#515151",
+					"class": "default",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "custom",
+					"method": "ObjectMethods/min_l.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 579,
+					"left": 378,
+					"width": 41,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.Servings",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#515151",
+					"class": "default",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 537,
+					"left": 424,
+					"width": 11,
+					"height": 21,
+					"stroke": "#515151",
+					"class": "default",
+					"textAlign": "center",
+					"text": ":"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 191,
+					"left": 164,
+					"width": 150,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"text": "Title"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 252,
+					"left": 164,
+					"width": 150,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"text": "Description"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 455,
+					"left": 216,
+					"width": 150,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"textAlign": "right",
+					"text": "Category"
+				}
+			}
+		},
+		{
+			"objects": {
+				"ingredientLB": {
+					"type": "listbox",
+					"top": 194,
+					"left": 79,
+					"width": 441,
+					"height": 411,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "30px",
+					"headerHeight": "30px",
+					"dataSource": "Form:C1466.ingredientList",
+					"currentItemSource": "Form:C1466.selectedIngredient",
+					"currentItemPositionSource": "Form:C1466.selectedIngredientPos",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "middle",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/ingredientLB.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.Item",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Ingredient",
+								"dataSource": "Header1",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.Quantity",
+							"width": 47,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Qty",
+								"dataSource": "Header2",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.Unit",
+							"width": 79,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Unit",
+								"dataSource": "Header3",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"IngredientsName_t": {
+					"type": "input",
+					"top": 215,
+					"left": 543,
+					"width": 295,
+					"height": 21,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.ingredientName",
+					"class": "default",
+					"dragging": "custom",
+					"method": "ObjectMethods/IngredientsName_t.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"IngredientsQty_r": {
+					"type": "input",
+					"top": 275,
+					"left": 543,
+					"width": 72,
+					"height": 21,
+					"dataSource": "Form:C1466.ingredientsQty",
+					"dataSourceTypeHint": "number",
+					"class": "default",
+					"contextMenu": "none",
+					"dragging": "custom",
+					"method": "ObjectMethods/IngredientsQty_r.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"IngredientsUnit_t": {
+					"type": "input",
+					"top": 275,
+					"left": 637,
+					"width": 72,
+					"height": 21,
+					"dataSource": "Form:C1466.ingredientsUnit",
+					"dataSourceTypeHint": "number",
+					"class": "default",
+					"contextMenu": "none",
+					"dragging": "custom",
+					"method": "ObjectMethods/IngredientsUnit_t.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"unit_at": {
+					"type": "dropdown",
+					"top": 274,
+					"left": 717,
+					"width": 23,
+					"height": 24,
+					"dataSource": "unit_at",
+					"class": "default",
+					"method": "ObjectMethods/unit_at.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 191,
+					"left": 542,
+					"width": 150,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"text": "Ingredient"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 250,
+					"left": 542,
+					"width": 90,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"text": "Quantity"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 250,
+					"left": 637,
+					"width": 90,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"text": "Unit"
+				},
+				"IngredientsDes_t": {
+					"type": "input",
+					"top": 336,
+					"left": 544,
+					"width": 295,
+					"height": 218,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.ingredientsDes",
+					"class": "default",
+					"dragging": "custom",
+					"method": "ObjectMethods/IngredientsDes_t.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"delIngredient": {
+					"type": "button",
+					"top": 574,
+					"left": 751,
+					"width": 88,
+					"height": 30,
+					"dataSource": "delIngredient",
+					"text": "Delete",
+					"class": "default",
+					"method": "ObjectMethods/delIngredient.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 311,
+					"left": 542,
+					"width": 270,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"text": "Additional Description"
+				},
+				"uniltFull_t": {
+					"type": "input",
+					"top": 275,
+					"left": 743,
+					"width": 89,
+					"height": 21,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "unitFull_t",
+					"class": "default",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 574,
+					"left": 647,
+					"width": 88,
+					"height": 30,
+					"dataSource": "Button",
+					"text": "Save",
+					"class": "default",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 574,
+					"left": 543,
+					"width": 88,
+					"height": 30,
+					"dataSource": "Button",
+					"text": "New",
+					"class": "default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"autofill_preview_lb": {
+					"type": "listbox",
+					"top": 646,
+					"left": 108,
+					"width": 116,
+					"height": 21,
+					"visibility": "hidden",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "25px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.autofill_preview",
+					"currentItemSource": "Form:C1466.selectedPreviewIngredient",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#E6EFFF",
+					"alternateFill": "#FFFFC0",
+					"verticalAlign": "middle",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/autofill_preview_lb.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "autofill_preview_at",
+							"dataSource": "This:C1470.Item",
+							"width": 379,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#E6EFFF",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer6",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#E6EFFF",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"autofill_preview_t": {
+					"type": "input",
+					"top": 650,
+					"left": 56,
+					"width": 42,
+					"height": 17,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "autofill_preview_t",
+					"class": "default",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"cookingStepsLB": {
+					"type": "listbox",
+					"top": 211,
+					"left": 59,
+					"width": 801,
+					"height": 243,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "30px",
+					"showHeaders": false,
+					"headerHeight": "30px",
+					"dataSource": "Form:C1466.cookingSteps",
+					"currentItemSource": "Form:C1466.selectedStep",
+					"currentItemPositionSource": "Form:C1466.selectedStepPos",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "middle",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/cookingStepsLB.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "cookingSteps_al",
+							"dataSource": "This:C1470.stepNum",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Header4",
+								"dataSource": "Header4",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "cookingDescSteps_at",
+							"dataSource": "This:C1470.stepDes",
+							"width": 736,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#E6EFFF",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Header5",
+								"dataSource": "Header5",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer5",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"cookingDescSteps_t": {
+					"type": "input",
+					"top": 475,
+					"left": 79,
+					"width": 760,
+					"height": 78,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.cookingStep",
+					"class": "default",
+					"placeholder": "Enter cooking direction here",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"saveDesc": {
+					"type": "button",
+					"top": 574,
+					"left": 651,
+					"width": 88,
+					"height": 30,
+					"dataSource": "saveDesc",
+					"text": "Save",
+					"class": "default",
+					"method": "ObjectMethods/saveDesc.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"addDesc": {
+					"type": "button",
+					"top": 574,
+					"left": 551,
+					"width": 88,
+					"height": 30,
+					"dataSource": "addDesc",
+					"text": "Add",
+					"class": "default",
+					"method": "ObjectMethods/addDesc.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"delDesc": {
+					"type": "button",
+					"top": 574,
+					"left": 751,
+					"width": 88,
+					"height": 30,
+					"dataSource": "delDesc",
+					"text": "Delete",
+					"class": "default",
+					"method": "ObjectMethods/delDesc.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 183,
+					"left": 62,
+					"width": 47,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"textAlign": "center",
+					"text": "#"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 183,
+					"left": 112,
+					"width": 287,
+					"height": 21,
+					"stroke": "#444444",
+					"class": "default",
+					"text": "Direction"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Line",
+				"Line1"
+			],
+			"Group2": [
+				"Line3",
+				"Line4"
+			]
+		}
+	}
+}

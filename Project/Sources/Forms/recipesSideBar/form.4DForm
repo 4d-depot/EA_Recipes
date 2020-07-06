@@ -1,0 +1,538 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 310,
+					"height": 726,
+					"sizingY": "grow",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"rectLookupBy": {
+					"type": "rectangle",
+					"top": 77,
+					"left": 322,
+					"width": 298,
+					"height": 466,
+					"stroke": "#D77A00",
+					"strokeWidth": 10,
+					"borderRadius": 5
+				},
+				"Text": {
+					"type": "text",
+					"top": 37,
+					"left": 21,
+					"width": 238,
+					"height": 23,
+					"class": "Font19",
+					"text": "All Recipes"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 97,
+					"left": 21,
+					"width": 238,
+					"height": 23,
+					"class": "Font19",
+					"text": "By Categories"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 157,
+					"left": 21,
+					"width": 238,
+					"height": 23,
+					"class": "Font19",
+					"text": "By Cuisine"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 217,
+					"left": 21,
+					"width": 238,
+					"height": 23,
+					"class": "Font19",
+					"text": "By Ingredients"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 277,
+					"left": 21,
+					"width": 238,
+					"height": 23,
+					"class": "Font19",
+					"text": "Favorites"
+				},
+				"lookup_lb": {
+					"type": "listbox",
+					"top": 87,
+					"left": 332,
+					"width": 278,
+					"height": 446,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "40px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.lookup",
+					"currentItemSource": "Form:C1466.category",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "middle",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 18,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lookup_lb.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "colPadding",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Light",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"verticalAlign": "middle",
+								"fontFamily": "Helvetica Light",
+								"fontSize": 18
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Helvetica Light",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "lookupContent",
+							"dataSource": "This:C1470.content",
+							"width": 193,
+							"minWidth": 10,
+							"maxWidth": 210,
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Light",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Header2",
+								"verticalAlign": "middle",
+								"fontFamily": "Helvetica Light",
+								"fontSize": 18
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Helvetica Light",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "lookupCount_at",
+							"dataSource": "This:C1470.count",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 40,
+							"alternateFill": "automatic",
+							"textAlign": "right",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Light",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Header3",
+								"verticalAlign": "middle",
+								"fontFamily": "Helvetica Light",
+								"fontSize": 18
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Helvetica Light",
+								"fontSize": 18
+							}
+						},
+						{
+							"name": "colPadding2",
+							"width": 18,
+							"minWidth": 10,
+							"maxWidth": 18,
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Light",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Header4",
+								"verticalAlign": "middle",
+								"fontFamily": "Helvetica Light",
+								"fontSize": 18
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": "Helvetica Light",
+								"fontSize": 18
+							}
+						}
+					]
+				},
+				"favRect": {
+					"type": "rectangle",
+					"top": 275,
+					"left": 104,
+					"width": 40,
+					"height": 25,
+					"fill": "#D77A00",
+					"stroke": "#D77A00",
+					"borderRadius": 20
+				},
+				"allRecipesRect": {
+					"type": "rectangle",
+					"top": 35,
+					"left": 124,
+					"width": 50,
+					"height": 25,
+					"fill": "#D77A00",
+					"stroke": "#D77A00",
+					"borderRadius": 20
+				},
+				"arrow11": {
+					"type": "line",
+					"top": 38,
+					"left": 282,
+					"width": 10,
+					"height": 10
+				},
+				"arrow12": {
+					"type": "line",
+					"top": 48,
+					"left": 282,
+					"width": 10,
+					"height": 10,
+					"startPoint": "bottomLeft"
+				},
+				"arrow21": {
+					"type": "line",
+					"top": 98,
+					"left": 282,
+					"width": 10,
+					"height": 10
+				},
+				"arrow22": {
+					"type": "line",
+					"top": 108,
+					"left": 282,
+					"width": 10,
+					"height": 10,
+					"startPoint": "bottomLeft"
+				},
+				"arrow31": {
+					"type": "line",
+					"top": 158,
+					"left": 282,
+					"width": 10,
+					"height": 10
+				},
+				"arrow32": {
+					"type": "line",
+					"top": 168,
+					"left": 282,
+					"width": 10,
+					"height": 10,
+					"startPoint": "bottomLeft"
+				},
+				"arrow41": {
+					"type": "line",
+					"top": 218,
+					"left": 282,
+					"width": 10,
+					"height": 10
+				},
+				"arrow42": {
+					"type": "line",
+					"top": 228,
+					"left": 282,
+					"width": 10,
+					"height": 10,
+					"startPoint": "bottomLeft"
+				},
+				"arrow51": {
+					"type": "line",
+					"top": 278,
+					"left": 282,
+					"width": 10,
+					"height": 10
+				},
+				"arrow52": {
+					"type": "line",
+					"top": 288,
+					"left": 282,
+					"width": 10,
+					"height": 10,
+					"startPoint": "bottomLeft"
+				},
+				"LineLookupBy1": {
+					"type": "line",
+					"top": 97,
+					"left": 321,
+					"height": 22,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy2": {
+					"type": "line",
+					"top": 98,
+					"left": 320,
+					"height": 20,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy3": {
+					"type": "line",
+					"top": 99,
+					"left": 319,
+					"height": 18,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy4": {
+					"type": "line",
+					"top": 100,
+					"left": 318,
+					"height": 16,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy5": {
+					"type": "line",
+					"top": 101,
+					"left": 317,
+					"height": 14,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy6": {
+					"type": "line",
+					"top": 102,
+					"left": 316,
+					"height": 12,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy7": {
+					"type": "line",
+					"top": 103,
+					"left": 315,
+					"height": 10,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy8": {
+					"type": "line",
+					"top": 104,
+					"left": 314,
+					"height": 8,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy9": {
+					"type": "line",
+					"top": 105,
+					"left": 313,
+					"height": 6,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy10": {
+					"type": "line",
+					"top": 106,
+					"left": 312,
+					"height": 4,
+					"stroke": "#D77A00"
+				},
+				"LineLookupBy11": {
+					"type": "line",
+					"top": 107,
+					"left": 311,
+					"height": 2,
+					"stroke": "#D77A00"
+				},
+				"recipeCount": {
+					"type": "input",
+					"top": 37,
+					"left": 124,
+					"width": 50,
+					"height": 23,
+					"dataSource": "Form:C1466.recipeCount",
+					"stroke": "#FFFFFF",
+					"class": "Font19",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"favCount": {
+					"type": "input",
+					"top": 277,
+					"left": 106,
+					"width": 35,
+					"height": 23,
+					"dataSource": "Form:C1466.favCount",
+					"stroke": "#FFFFFF",
+					"class": "Font19",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"allRecipesButton": {
+					"type": "button",
+					"top": 25,
+					"left": 0,
+					"width": 310,
+					"height": 46,
+					"focusable": false,
+					"style": "custom",
+					"method": "ObjectMethods/allRecipesButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"categoriesButton": {
+					"type": "button",
+					"top": 85,
+					"left": 0,
+					"width": 310,
+					"height": 46,
+					"focusable": false,
+					"style": "custom",
+					"method": "ObjectMethods/categoriesButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cuisineButton": {
+					"type": "button",
+					"top": 145,
+					"left": 0,
+					"width": 310,
+					"height": 46,
+					"focusable": false,
+					"style": "custom",
+					"method": "ObjectMethods/cuisineButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ingredientsButton": {
+					"type": "button",
+					"top": 205,
+					"left": 0,
+					"width": 310,
+					"height": 46,
+					"focusable": false,
+					"style": "custom",
+					"method": "ObjectMethods/ingredientsButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"favoritesButton_": {
+					"type": "button",
+					"top": 265,
+					"left": 0,
+					"width": 310,
+					"height": 46,
+					"focusable": false,
+					"style": "custom",
+					"method": "ObjectMethods/favoritesButton_.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group7": [
+				"arrow11",
+				"arrow12"
+			],
+			"Group6": [
+				"arrow21",
+				"arrow22"
+			],
+			"Group5": [
+				"arrow31",
+				"arrow32"
+			],
+			"Group4": [
+				"arrow41",
+				"arrow42"
+			],
+			"Group3": [
+				"arrow51",
+				"arrow52"
+			]
+		}
+	}
+}

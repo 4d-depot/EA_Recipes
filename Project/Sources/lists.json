@@ -1,0 +1,508 @@
+﻿{
+	"Cuisines": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "American",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Chinese",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "Continental",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Cuban",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "French",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Greek",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Indian",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Indonesian",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "Italian",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "Japanese",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "Korean",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "Lebanese",
+				"ref": 12,
+				"editable": true
+			},
+			{
+				"text": "Malaysian",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "Mexican",
+				"ref": 14,
+				"editable": true
+			},
+			{
+				"text": "Pakistani",
+				"ref": 15,
+				"editable": true
+			},
+			{
+				"text": "Russian",
+				"ref": 16,
+				"editable": true
+			},
+			{
+				"text": "Singapore",
+				"ref": 17,
+				"editable": true
+			},
+			{
+				"text": "Spanish",
+				"ref": 18,
+				"editable": true
+			},
+			{
+				"text": "Thai",
+				"ref": 19,
+				"editable": true
+			},
+			{
+				"text": "Tibetan",
+				"ref": 20,
+				"editable": true
+			},
+			{
+				"text": "Vietnamese",
+				"ref": 21,
+				"editable": true
+			}
+		]
+	},
+	"Measurement Units": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": " ",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "tsp",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "tbs",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "oz",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "c",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "pt",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "qt",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "gal",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "ml",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "L",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "dL",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "lb",
+				"ref": 12,
+				"editable": true
+			},
+			{
+				"text": "mg",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "g",
+				"ref": 14,
+				"editable": true
+			},
+			{
+				"text": "kg",
+				"ref": 15,
+				"editable": true
+			},
+			{
+				"text": "piece(s)",
+				"ref": 16,
+				"editable": true
+			}
+		]
+	},
+	"Measurement Units Full": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": " ",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "teaspoon",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "tablespoon",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "ounce",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "cup",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "pint",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "quart",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "gallon",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "milliliter",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "liter",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "deciliter",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "pound",
+				"ref": 12,
+				"editable": true
+			},
+			{
+				"text": "milligram",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "gram",
+				"ref": 14,
+				"editable": true
+			},
+			{
+				"text": "kilogram",
+				"ref": 15,
+				"editable": true
+			},
+			{
+				"text": "piece(s)",
+				"ref": 16,
+				"editable": true
+			}
+		]
+	},
+	"Recipe Categories": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Appetizers",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Beverages",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "Breakfast & Brunch",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Breads",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "Cookies & Candy",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Desserts",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Main Dishes",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Side Dishes",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "Salads",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "Soups",
+				"ref": 11,
+				"editable": true
+			}
+		]
+	},
+	"Recipe Categories1": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Appetizers",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Beverages",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "Breakfast & Brunch",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Breads",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "Cookies & Candy",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Desserts",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Main Dishes",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Side Dishes",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "Salads",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "Soups",
+				"ref": 10,
+				"editable": true
+			}
+		]
+	},
+	"Cuisines1": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "American",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Chinese",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "Continental",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Cuban",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "French",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Greek",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Indian",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Indonesian",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "Italian",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "Japanese",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "Korean",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "Lebanese",
+				"ref": 12,
+				"editable": true
+			},
+			{
+				"text": "Malaysian",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "Mexican",
+				"ref": 14,
+				"editable": true
+			},
+			{
+				"text": "Pakistani",
+				"ref": 15,
+				"editable": true
+			},
+			{
+				"text": "Russian",
+				"ref": 16,
+				"editable": true
+			},
+			{
+				"text": "Singapore",
+				"ref": 17,
+				"editable": true
+			},
+			{
+				"text": "Spanish",
+				"ref": 18,
+				"editable": true
+			},
+			{
+				"text": "Thai",
+				"ref": 19,
+				"editable": true
+			},
+			{
+				"text": "Tibetan",
+				"ref": 20,
+				"editable": true
+			},
+			{
+				"text": "Vietnamese",
+				"ref": 21,
+				"editable": true
+			}
+		]
+	}
+}

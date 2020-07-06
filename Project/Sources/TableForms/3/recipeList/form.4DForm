@@ -1,0 +1,116 @@
+﻿{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 124,
+	"markerBreak": 124,
+	"markerFooter": 124,
+	"events": [
+		"onLoad",
+		"onDoubleClick",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 929,
+					"height": 123,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"Field": {
+					"type": "input",
+					"top": 16,
+					"left": 20,
+					"width": 158,
+					"height": 90,
+					"dataSource": "[Recipes:3]PhotoThumbnail:9",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 16,
+					"left": 200,
+					"width": 509,
+					"height": 23,
+					"sizingX": "grow",
+					"dataSource": "[Recipes:3]Title:2",
+					"class": "Font20",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 47,
+					"left": 200,
+					"width": 709,
+					"height": 53,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Recipes:3]Description:8",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 18,
+					"left": 650,
+					"width": 254,
+					"height": 22,
+					"sizingX": "move",
+					"dataSource": "[Recipes:3]Cuisine:7",
+					"textAlign": "right",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

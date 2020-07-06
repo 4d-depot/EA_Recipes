@@ -1,0 +1,70 @@
+﻿{
+	"Forms": {
+		"forms": [
+			"[Recipes]recipeInput",
+			"[Recipes]recipeList",
+			"mainWindow",
+			"recipePreview",
+			"recipePrintable",
+			"recipesSideBar",
+			"searchAndButtonBarD",
+			"searchAndButtonBarL"
+		]
+	},
+	"Project Methods": {
+		"methods": [
+			"_openRecipeManager",
+			"calculateSubformMinHeight",
+			"Compiler_Arrays",
+			"Compiler_Methods",
+			"Compiler_Variables",
+			"enableButton",
+			"loadRecipeForPrinting",
+			"loadRecipeForPrinting2",
+			"loadRecipeInput",
+			"movePageIndicator",
+			"printRecipe",
+			"setNavArrow",
+			"showPrintPreview",
+			"showPrintPreview2",
+			"togglePreviousNextButtons",
+			"toggleVisibility",
+			"updateDetailForm",
+			"updateListData",
+			"updateLookupListbox",
+			"updateRecipeCount",
+			"updateSidebar"
+		]
+	},
+	"Recipes": {
+		"groups": [
+			"Forms",
+			"Project Methods",
+			"Tables"
+		]
+	},
+	"Splashscreen": {
+		"methods": [
+			"_openSplashScreen"
+		],
+		"forms": [
+			"splashScreen"
+		]
+	},
+	"Tables": {
+		"tables": [
+			"Ingredients",
+			"Recipes"
+		]
+	},
+	"Unused": {
+		"forms": [
+			"[Ingredients]Input",
+			"[Ingredients]Output",
+			"[Recipes]Input",
+			"[Recipes]Input1",
+			"[Recipes]Output"
+		]
+	},
+	"trash": {}
+}

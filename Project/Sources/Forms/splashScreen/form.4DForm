@@ -1,0 +1,303 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 178,
+					"width": 493,
+					"height": 362,
+					"fill": "#ECECEC",
+					"stroke": "transparent"
+				},
+				"Round Rectangle2": {
+					"type": "rectangle",
+					"top": 313,
+					"left": 431,
+					"width": 220,
+					"height": 29,
+					"fill": "#FA7C3F",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 313,
+					"left": 201,
+					"width": 220,
+					"height": 29,
+					"fill": "#FA7C3F",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 178,
+					"height": 363,
+					"stroke": "transparent"
+				},
+				"Text": {
+					"type": "text",
+					"top": 30,
+					"left": 200,
+					"width": 327,
+					"height": 23,
+					"stroke": "#696969",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"text": "Welcome to 4D Recipe Application"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 73,
+					"left": 200,
+					"width": 455,
+					"height": 196,
+					"stroke": "#696969",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"text": "This application provides a demo for a basic recipe manager. Users can annotate recipe details such as cooking steps, preparation time, cuisine type, and ingredients."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 289,
+					"left": 201,
+					"width": 368,
+					"height": 20,
+					"stroke": "#696969",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"text": "Start the application with"
+				},
+				"Button": {
+					"type": "button",
+					"top": 313,
+					"left": 201,
+					"width": 220,
+					"height": 30,
+					"action": "accept",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"text": "The current data file",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 313,
+					"left": 431,
+					"width": 220,
+					"height": 30,
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"text": "A new data file",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Round Rectangle3": {
+					"type": "rectangle",
+					"top": 132,
+					"left": 18,
+					"width": 137,
+					"height": 10,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				},
+				"Oval": {
+					"type": "oval",
+					"top": 77,
+					"left": 31,
+					"width": 112,
+					"height": 112,
+					"fill": "#696969",
+					"stroke": "#696969"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 141,
+					"left": 23,
+					"width": 132,
+					"height": 48,
+					"stroke": "#FFFFFF"
+				},
+				"Oval1": {
+					"type": "oval",
+					"top": 60,
+					"left": 80,
+					"width": 16,
+					"height": 15,
+					"fill": "#696969",
+					"stroke": "#696969"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 127,
+					"left": 18,
+					"width": 137,
+					"height": 5,
+					"stroke": "#FFFFFF"
+				},
+				"Round Rectangle4": {
+					"type": "rectangle",
+					"top": 101,
+					"left": 16,
+					"width": 12,
+					"height": 25,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				},
+				"Round Rectangle5": {
+					"type": "rectangle",
+					"top": 79,
+					"left": 20,
+					"width": 4,
+					"height": 29,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				},
+				"Oval2": {
+					"type": "oval",
+					"top": 51,
+					"left": 11,
+					"width": 22,
+					"height": 34,
+					"fill": "#696969",
+					"stroke": "#696969"
+				},
+				"Round Rectangle6": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 146,
+					"width": 12,
+					"height": 25,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				},
+				"Round Rectangle7": {
+					"type": "rectangle",
+					"top": 79,
+					"left": 150,
+					"width": 4,
+					"height": 29,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				},
+				"Round Rectangle8": {
+					"type": "rectangle",
+					"top": 70,
+					"left": 138,
+					"width": 27,
+					"height": 12,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				},
+				"Round Rectangle11": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 149,
+					"width": 5,
+					"height": 30,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				},
+				"Round Rectangle9": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 138,
+					"width": 5,
+					"height": 30,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				},
+				"Round Rectangle10": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 160,
+					"width": 5,
+					"height": 30,
+					"fill": "#696969",
+					"stroke": "#696969",
+					"borderRadius": 5
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group8": [
+				"Round Rectangle3",
+				"Oval",
+				"Rectangle",
+				"Oval1",
+				"Rectangle1"
+			],
+			"Group9": [
+				"Round Rectangle4",
+				"Round Rectangle5",
+				"Oval2"
+			],
+			"Group10": [
+				"Round Rectangle6",
+				"Round Rectangle7",
+				"Round Rectangle8",
+				"Round Rectangle11",
+				"Round Rectangle9",
+				"Round Rectangle10"
+			]
+		}
+	}
+}

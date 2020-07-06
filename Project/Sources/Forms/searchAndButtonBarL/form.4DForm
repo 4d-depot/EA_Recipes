@@ -1,0 +1,196 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 929,
+					"height": 60,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture9": {
+					"type": "picture",
+					"top": 11,
+					"left": 341,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture9.png"
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 11,
+					"left": 10,
+					"width": 320,
+					"height": 35,
+					"stroke": "#83A6DA",
+					"borderRadius": 20
+				},
+				"searchText": {
+					"type": "input",
+					"top": 20,
+					"left": 27,
+					"width": 264,
+					"height": 20,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.searchText",
+					"fontFamily": "Helvetica Light",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "Search by Name",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/searchText.4dm",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"searchDelLine": {
+					"type": "line",
+					"top": 25,
+					"left": 308,
+					"width": 7,
+					"height": 7,
+					"stroke": "#444444"
+				},
+				"searchDelLine1": {
+					"type": "line",
+					"top": 25,
+					"left": 308,
+					"width": 7,
+					"height": 7,
+					"stroke": "#444444",
+					"startPoint": "bottomLeft"
+				},
+				"searchDelOval": {
+					"type": "oval",
+					"top": 21,
+					"left": 304,
+					"width": 15,
+					"height": 15,
+					"fill": "transparent",
+					"stroke": "#444444"
+				},
+				"searchDelButton": {
+					"type": "button",
+					"top": 19,
+					"left": 301,
+					"width": 21,
+					"height": 19,
+					"display": false,
+					"method": "ObjectMethods/searchDelButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"newRect1": {
+					"type": "rectangle",
+					"top": 11,
+					"left": 757,
+					"width": 75,
+					"height": 32,
+					"sizingX": "move",
+					"fill": "#D86D00",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Button2": {
+					"type": "button",
+					"top": 11,
+					"left": 757,
+					"width": 75,
+					"height": 32,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"text": "NEW",
+					"style": "custom",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"newRect3": {
+					"type": "rectangle",
+					"top": 11,
+					"left": 839,
+					"width": 75,
+					"height": 32,
+					"sizingX": "move",
+					"fill": "#D86D00",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Button3": {
+					"type": "button",
+					"top": 11,
+					"left": 839,
+					"width": 75,
+					"height": 32,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"text": "DEL",
+					"style": "custom",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Button": {
+					"type": "button",
+					"top": 9,
+					"left": 338,
+					"width": 39,
+					"height": 37,
+					"focusable": false,
+					"style": "custom",
+					"method": "ObjectMethods/3D Button.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="7">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<interface>
+			<developper display_toolbar="false"/>
+			<user splash_screen="false"/>
+		</interface>
+		<compiler>
+			<options compilation_path="3"/>
+		</compiler>
+		<general startup_environnement="1"/>
+		<server>
+			<network>
+				<client_server use_encryption="false"/>
+			</network>
+		</server>
+	</com.4d>
+</preferences>
