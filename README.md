@@ -3,6 +3,10 @@ Featuring: Subform, Listbox, and Dynamic object
 
 This application provides a unique way to organize any cooking recipes. The user can create a recipe with ingredients and cooking steps of their choice. Each recipe can also be displayed in a unique layout that is easy for anyone to follow. The implementation combines the use of Subform, Listbox, Dynamic object, and layout control technique in action to create a friendly user interface.
 
+<p align="center">
+<img src="Resources/Images/recipe.png" alt="Recipe Application" width="45%">
+</p>
+
 Minimum requirement: 4D v19 LTS
 
 ## Installing and Using a 4D Project
