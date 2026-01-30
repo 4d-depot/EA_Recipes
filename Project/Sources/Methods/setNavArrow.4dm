@@ -4,7 +4,7 @@
 //   This method enables the arrow icon when user clicks on a row
 //
 // Parameters
-//   $1 - Selected row (LONGINT)
+//   $selectedRow - Selected row (LONGINT)
 //Updated by: Al Mahdi
 // ----------------------------------------------------
 

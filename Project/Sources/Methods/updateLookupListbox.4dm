@@ -1,11 +1,11 @@
 //%attributes = {"invisible":true}
-  // Method: updateLookupListbox
-  // Description
-  //   This method updates the content of the lookup listbox
-  //
-  // Parameters
-  //   $1 - Button type that the user clicked 
-  // ----------------------------------------------------
+// Method: updateLookupListbox
+// Description
+//   This method updates the content of the lookup listbox
+//
+// Parameters
+//   $buttonType - Button type that the user clicked 
+// ----------------------------------------------------
 //Updated by: Al Mahdi
 
 #DECLARE($buttonType : Text)
@@ -27,7 +27,7 @@ Case of
 			$item_o:=New object:C1471
 			$item_o.content:=$category_t
 			
-			$count_l:=$recipes_es.query("Category = :1";$category_t).length
+			$count_l:=$recipes_es.query("Category = :1"; $category_t).length
 			If ($count_l>0)
 				$item_o.count:=$count_l
 			End if 
@@ -44,7 +44,7 @@ Case of
 			$item_o:=New object:C1471
 			$item_o.content:=$cuisine_t
 			
-			$count_l:=$recipes_es.query("Cuisine = :1";$cuisine_t).length
+			$count_l:=$recipes_es.query("Cuisine = :1"; $cuisine_t).length
 			If ($count_l>0)
 				$item_o.count:=$count_l
 			End if 
@@ -52,12 +52,12 @@ Case of
 			Form:C1466.lookup.push($item_o)
 		End for 
 		
-		  // Ingredients button clicked
+		// Ingredients button clicked
 	: ($buttonType="Ingredients")
 		$ingredients_es:=ds:C1482.Ingredients.all()
 		
 		$temp_o:=New object:C1471
-		For each ($e;$ingredients_es)
+		For each ($e; $ingredients_es)
 			If ($temp_o[$e.Item]=Null:C1517)
 				$temp_o[$e.Item]:=1
 			Else 
@@ -65,7 +65,7 @@ Case of
 			End if 
 		End for each 
 		
-		For each ($ingredient_t;$temp_o)
+		For each ($ingredient_t; $temp_o)
 			$item_o:=New object:C1471
 			$item_o.content:=$ingredient_t
 			$item_o.count:=$temp_o[$ingredient_t]

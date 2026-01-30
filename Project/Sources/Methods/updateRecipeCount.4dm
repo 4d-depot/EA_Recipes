@@ -1,11 +1,11 @@
 //%attributes = {"invisible":true}
-  // Method: updateRecipeCount
-  // Description
-  //   Return string of number of found recipes
-  //
-  // Parameters
-  //   $0 - Number of found recipes (TEXT)
-  // ----------------------------------------------------
+// Method: updateRecipeCount
+// Description
+//   Return string of number of found recipes
+//
+// Parameters
+//   $count_l - Number of found recipes (TEXT)
+// ----------------------------------------------------
 //Updated by: Al Mahdi
 
 
