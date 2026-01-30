@@ -1,6 +1,7 @@
-C_OBJECT:C1216($recipes_es)
+//Updated by: Al Mahdi
 
 setNavArrow (5)
+var $recipes_es : Object
 Form:C1466.lastSelected:=5
 Form:C1466.querySelected:=5
 Form:C1466.expandListbox:=False:C215

@@ -10,12 +10,13 @@
 
 loadRecipeForPrinting2 
 
-C_LONGINT:C283($bestWidth_l;$bestHeight_l)
-C_LONGINT:C283($l;$t;$r;$b;$bb;$newtop_l;$newRectTop_l;$newBottom_l;$bottom_l)
 
   // Make sure the title object fits
 OBJECT GET COORDINATES:C663(*;"recipeTitle";$l;$t;$r;$b)
 OBJECT GET BEST SIZE:C717(*;"recipeTitle";$bestWidth_l;$bestHeight_l;$r-$l)
+//Updated by: Al Mahdi
+var $bestWidth_l; $bestHeight_l : Integer
+var $l; $t; $r; $b; $bb; $newtop_l; $newRectTop_l; $newBottom_l; $bottom_l : Integer
 $bb:=$t+$bestHeight_l
 OBJECT SET COORDINATES:C1248(*;"recipeTitle";$l;$t;$r;$bb)
 

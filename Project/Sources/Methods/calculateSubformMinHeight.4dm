@@ -6,8 +6,9 @@
   //    currently displayed subform.
   //
   // ----------------------------------------------------
+//Updated by: Al Mahdi
+var $i; $t; $r; $b; minSubformHeight_l : Integer
 
-C_LONGINT:C283($i;$t;$r;$b;minSubformHeight_l)
 If (Form:C1466.showDetailView)
 	OBJECT GET COORDINATES:C663(*;"detail_SF";$i;$t;$r;$b)
 Else 

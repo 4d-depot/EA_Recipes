@@ -1,7 +1,11 @@
+//Updated by: Al Mahdi
+
+var mainWinRef : Integer
+var bFavorite : Boolean
+var $l; $t; $r; $b : Integer
+
 Case of 
 	: (Form event code:C388=On Load:K2:1)
-		C_LONGINT:C283(mainWinRef)
-		C_BOOLEAN:C305(bFavorite)
 		
 		bFavorite:=False:C215
 		mainWinRef:=Current form window:C827

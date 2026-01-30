@@ -8,10 +8,12 @@
   // Parameters
   //   $1  -   Page number
   // ----------------------------------------------------
+//Updated by: Al Mahdi
 
-C_LONGINT:C283($1;$l;$t;$r;$b;$l2;$t2;$r2;$b2;$page_l)
+#DECLARE($page_l : Integer)
 
-$page_l:=$1
+var $l; $t; $r; $b; $l2; $t2; $r2; $b2 : Integer
+
 FORM GOTO PAGE:C247($page_l)
 OBJECT GET COORDINATES:C663(*;"bPage"+String:C10($page_l);$l;$t;$r;$b)
 OBJECT GET COORDINATES:C663(*;"SelectedIndicator";$l2;$t2;$r2;$b2)

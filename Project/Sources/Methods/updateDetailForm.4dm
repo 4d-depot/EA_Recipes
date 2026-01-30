@@ -4,9 +4,10 @@
   //   Updates detail form when previous or next button is pressed from [Recipes]recipeInput
   //
   // ----------------------------------------------------
+//Updated by: Al Mahdi
 
 
-C_LONGINT:C283($recordNum_l)
+var $recordNum_l : Integer
 $recordNum_l:=Selected record number:C246([Recipes:3])
 
 If ($recordNum_l#0)

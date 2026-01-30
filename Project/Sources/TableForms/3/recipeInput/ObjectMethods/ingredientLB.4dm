@@ -1,3 +1,5 @@
+var $foundat_l : Integer
+
 Case of 
 	: (Form event code:C388=On Clicked:K2:4)
 		If (Form:C1466.selectedIngredient#Null:C1517)
@@ -8,7 +10,6 @@ Case of
 			Form:C1466.ingredientsUnit:=Form:C1466.selectedIngredient.Unit
 			Form:C1466.ingredientsDes:=Form:C1466.selectedIngredient.Description
 			
-			C_LONGINT:C283($foundat_l)
 			$foundat_l:=Find in array:C230(unit_at;Form:C1466.ingredientsUnit)
 			unit_at:=$foundat_l
 			If ($foundat_l#-1)

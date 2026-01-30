@@ -8,10 +8,11 @@
   // ----------------------------------------------------
 
   // Format list of ingredients
+//Updated by: Al Mahdi
 
 If (Form:C1466.ent#Null:C1517)
 	
-	C_OBJECT:C1216($ingredient_e)
+	var $ingredient_e : Object
 	Form:C1466.ingredients:=""
 	
 	For each ($ingredient_e;Form:C1466.ent.ingredients)
@@ -40,7 +41,7 @@ If (Form:C1466.ent#Null:C1517)
 	
 	  // Format time
 	
-	C_LONGINT:C283($hour_l;$min_l)
+	var $hour_l; $min_l : Integer
 	Form:C1466.CookTime:=""
 	
 	$hour_l:=Int:C8(Form:C1466.ent.CookTime/60)
@@ -59,8 +60,8 @@ If (Form:C1466.ent#Null:C1517)
 	
 	  // Format cooking steps
 	
-	C_TEXT:C284($step_t)
-	C_LONGINT:C283($i)
+	var $step_t : Text
+	var $i : Integer
 	Form:C1466.CookingSteps:=""
 	
 	If (Form:C1466.ent.CookingSteps#Null:C1517)

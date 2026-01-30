@@ -1,5 +1,5 @@
-C_LONGINT:C283($win_l)
-C_OBJECT:C1216($form_o)
+var $win_l : Integer
+var $form_o : Object
 
   // If there is a recipe selected, load recipeInput form
 If (Form:C1466.ent#Null:C1517)
@@ -17,4 +17,4 @@ If (Form:C1466.ent#Null:C1517)
 	If (OK=1)
 		CALL SUBFORM CONTAINER:C1086(-6)  // On Save event from edit button
 	End if 
-End if 
+End if //updated by: Al Mahdi

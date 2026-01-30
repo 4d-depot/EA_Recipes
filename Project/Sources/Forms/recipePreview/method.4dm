@@ -1,4 +1,7 @@
-C_BOOLEAN:C305($isVisible_b)
+//Updated by: Al Mahdi
+
+var $isVisible_b : Boolean
+
 If (Form:C1466.ent=Null:C1517)
 	$isVisible_b:=False:C215
 	toggleVisibility ("cookingTimePrn_t";$isVisible_b)

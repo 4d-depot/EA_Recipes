@@ -1,6 +1,10 @@
+//Updated by: Al Mahdi
+
+var $recordNum_l; $win_l : Integer
+var $form_o : Object
+
 Case of 
 	: (Form event code:C388=On Selection Change:K2:29)
-		C_LONGINT:C283($recordNum_l)
 		$recordNum_l:=Selected record number:C246([Recipes:3])
 		
 		If ($recordNum_l#0)
@@ -11,8 +15,6 @@ Case of
 		End if 
 		
 	: (Form event code:C388=On Double Clicked:K2:5)
-		C_LONGINT:C283($win_l)
-		C_OBJECT:C1216($form_o)
 		
 		  // If there is a recipe selected, load recipeInput form
 		If ([Recipes:3]ID:1#0)

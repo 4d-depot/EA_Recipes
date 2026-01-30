@@ -1,7 +1,8 @@
-C_LONGINT:C283($win_l)
-C_OBJECT:C1216($form_o)
+//Updated by: Al Mahdi
 
   // If there is a recipe selected, load recipeInput form
+var $win_l : Integer
+var $form_o; $lastOpenedRecipe_o; $ingredients_es; $e; $status_o : Object
 $form_o:=New object:C1471
 $form_o.ent:=ds:C1482.Recipes.new()
 $form_o.hour:=0
@@ -18,7 +19,6 @@ If (OK=1)
 	CALL SUBFORM CONTAINER:C1086(-5)
 Else 
 	  // If user saved ingredients but not the recipe itself, delete ingredients from that non-existent recipe
-	C_OBJECT:C1216($lastOpenedRecipe_o;$ingredients_es;$e;$status_o)
 	$lastOpenedRecipe_o:=ds:C1482.Recipes.get(lastOpenedRecipeID_l)
 	
 	If ($lastOpenedRecipe_o=Null:C1517)

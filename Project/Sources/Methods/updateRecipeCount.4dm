@@ -6,13 +6,13 @@
   // Parameters
   //   $0 - Number of found recipes (TEXT)
   // ----------------------------------------------------
+//Updated by: Al Mahdi
 
-C_TEXT:C284($0)
-C_LONGINT:C283($count_l)
-$count_l:=Records in selection:C76([Recipes:3])
+
+#DECLARE($count_l : Integer)->$result : Text
 
 If ($count_l=1)
-	$0:=String:C10($count_l)+" recipe"
+	$result:=String:C10($count_l)+" recipe"
 Else 
-	$0:=String:C10($count_l)+" recipes"
+	$result:=String:C10($count_l)+" recipes"
 End if 

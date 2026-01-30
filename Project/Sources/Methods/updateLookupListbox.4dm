@@ -6,27 +6,24 @@
   // Parameters
   //   $1 - Button type that the user clicked 
   // ----------------------------------------------------
+//Updated by: Al Mahdi
 
-C_TEXT:C284($1)
+#DECLARE($buttonType : Text)
 
-C_LONGINT:C283($i)
-C_OBJECT:C1216($recipes_es)
-C_OBJECT:C1216($item_o;$e)
-C_LONGINT:C283($count_l)
+var $i; $count_l : Integer
+var $recipes_es; $item_o; $e; $ingredients_es; $temp_o : Object
+var $category_t; $cuisine_t; $ingredient_t : Text
 
 $recipes_es:=ds:C1482.Recipes.all()
 Form:C1466.lookup:=New collection:C1472
 
 Case of 
-		  // Categories button clicked
+	: ($buttonType="Categories")
+		ARRAY TEXT:C222($categories_array; 0)
+		LIST TO ARRAY:C288("Recipe Categories"; $categories_array)
 		
-	: ($1="Categories")
-		C_TEXT:C284($category_t)
-		ARRAY TEXT:C222($categories_at;0)
-		LIST TO ARRAY:C288("Recipe Categories";$categories_at)
-		
-		For ($i;1;Size of array:C274($categories_at))
-			$category_t:=$categories_at{$i}
+		For ($i; 1; Size of array:C274($categories_array))
+			$category_t:=$categories_array{$i}
 			$item_o:=New object:C1471
 			$item_o.content:=$category_t
 			
@@ -38,15 +35,12 @@ Case of
 			Form:C1466.lookup.push($item_o)
 		End for 
 		
-		  // Cuisines button clicked
+	: ($buttonType="Cuisines")
+		ARRAY TEXT:C222($cuisines_array; 0)
+		LIST TO ARRAY:C288("Cuisines"; $cuisines_array)
 		
-	: ($1="Cuisines")
-		C_TEXT:C284($cuisine_t)
-		ARRAY TEXT:C222($cuisines_at;0)
-		LIST TO ARRAY:C288("Cuisines";$cuisines_at)
-		
-		For ($i;1;Size of array:C274($cuisines_at))
-			$cuisine_t:=$cuisines_at{$i}
+		For ($i; 1; Size of array:C274($cuisines_array))
+			$cuisine_t:=$cuisines_array{$i}
 			$item_o:=New object:C1471
 			$item_o.content:=$cuisine_t
 			
@@ -59,9 +53,7 @@ Case of
 		End for 
 		
 		  // Ingredients button clicked
-		
-	: ($1="Ingredients")
-		C_OBJECT:C1216($ingredients_es;$e;$temp_o)
+	: ($buttonType="Ingredients")
 		$ingredients_es:=ds:C1482.Ingredients.all()
 		
 		$temp_o:=New object:C1471
@@ -73,7 +65,6 @@ Case of
 			End if 
 		End for each 
 		
-		C_TEXT:C284($ingredient_t)
 		For each ($ingredient_t;$temp_o)
 			$item_o:=New object:C1471
 			$item_o.content:=$ingredient_t

@@ -8,8 +8,8 @@
   //   $1 - Button object name (TEXT)
   //   $2 - Boolean to enable or disable (BOOL)
   // ----------------------------------------------------
+//Updated by: Al Mahdi
 
-C_TEXT:C284($1)
-C_BOOLEAN:C305($2)
+#DECLARE($buttonName : Text; $enable : Boolean)
 
-OBJECT SET ENABLED:C1123(*;$1;$2)
+OBJECT SET ENABLED:C1123(*; $buttonName; $enable)

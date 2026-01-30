@@ -1,5 +1,5 @@
-C_LONGINT:C283($recordNum_l)
-C_OBJECT:C1216($recipeSelection_es)
+var $recordNum_l : Integer
+var $recipeSelection_es : Object
 
 $recordNum_l:=Selected record number:C246([Recipes:3])
 $recipeSelection_es:=Create entity selection:C1512([Recipes:3])

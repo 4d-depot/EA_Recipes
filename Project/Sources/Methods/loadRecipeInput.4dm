@@ -1,5 +1,11 @@
 //%attributes = {"invisible":true}
-C_LONGINT:C283(lastOpenedRecipeID_l)
+//Updated by: Al Mahdi
+
+var lastOpenedRecipeID_l : Integer
+var bFavorite : Boolean
+var $step_t : Text
+var $step_o : Object
+
 lastOpenedRecipeID_l:=Form:C1466.ent.ID
 
 ARRAY TEXT:C222(unit_at;0)
@@ -19,8 +25,6 @@ Form:C1466.cookingSteps:=New collection:C1472
 Form:C1466.cookingStep:=""
 If (Form:C1466.ent.CookingSteps#Null:C1517)
 	If (Form:C1466.ent.CookingSteps.steps#Null:C1517)
-		C_TEXT:C284($step_t)
-		C_OBJECT:C1216($step_o)
 		
 		For each ($step_t;Form:C1466.ent.CookingSteps.steps)
 			$step_o:=New object:C1471

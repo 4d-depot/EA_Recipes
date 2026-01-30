@@ -1,7 +1,7 @@
 OBJECT SET VISIBLE:C603(*;"autofill_preview_lb";False:C215)
+var $status_o; $ingredient_e : Object
 
 If (Form:C1466.selectedIngredient#Null:C1517)
-	C_OBJECT:C1216($status_o;$ingredient_e)
 	
 	$ingredient_e:=ds:C1482.Ingredients.get(Form:C1466.selectedIngredient.ID)
 	$status_o:=$ingredient_e.drop()

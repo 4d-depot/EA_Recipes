@@ -7,7 +7,7 @@ This application provides a unique way to organize any cooking recipes. The user
 <img src="Resources/Images/recipe.png" alt="Recipe Application" width="45%">
 </p>
 
-Minimum requirement: 4D v19 LTS
+Minimum requirement: 4D 21 LTS
 
 ## Installing and Using a 4D Project
 

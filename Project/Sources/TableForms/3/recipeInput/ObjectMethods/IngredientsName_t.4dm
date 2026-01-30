@@ -1,28 +1,30 @@
+var $bw; $bh; $bw1; $bh1 : Integer
+var $l; $t; $r; $b; $ris_l; $i : Integer
+var $l2; $t2; $r2; $b2 : Integer
+var $ingredient_t : Text
+var $foundIngredients_es : cs:C1710.IngredientsSelection
+var $e : cs:C1710.IngredientsEntity
+var $uniqueCheck_o : Object
+
 Case of 
 		  // Titlecase user input
 	: (Form event code:C388=On Data Change:K2:15)
 		If (Form:C1466.ingredientName#"")
 			Form:C1466.ingredientName:=Lowercase:C14(Form:C1466.ingredientName)
-			Form:C1466.ingredientName[[1]]:=Uppercase:C13(Form:C1466.ingredientName[[1]])
+			Form:C1466.ingredientName:=Uppercase:C13(Substring:C12(Form:C1466.ingredientName; 1; 1))+Substring:C12(Form:C1466.ingredientName; 2)
 		End if 
 		
 	: (Form event code:C388=On After Edit:K2:43)
-		C_LONGINT:C283($bw;$bh;$bw1;$bh1)
-		C_LONGINT:C283($l;$t;$r;$b;$ris_l;$i)
-		C_LONGINT:C283($l2;$t2;$r2;$b2)
 		
-		C_TEXT:C284($ingredient_t)
-		$ingredient_t:=Get edited text:C655
+		$ingredient_t:=FORM Event:C1606.data
 		
 		Form:C1466.autofill_preview:=New collection:C1472
 		
 		If ($ingredient_t#"")
 			$ingredient_t:=Uppercase:C13($ingredient_t+"@")
 			
-			C_OBJECT:C1216($foundIngredients_es;$e)
 			$foundIngredients_es:=ds:C1482.Ingredients.query("Item = :1";$ingredient_t)
 			
-			C_OBJECT:C1216($uniqueCheck_o)
 			$uniqueCheck_o:=New object:C1471
 			
 			For each ($e;$foundIngredients_es)

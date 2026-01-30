@@ -1,5 +1,6 @@
-C_BOOLEAN:C305($tryAgain_b)
-C_TEXT:C284($datafile_t)
+//Updated by: Al Mahdi
+var $tryAgain_b : Boolean
+var $datafile_t : Text
 
 Repeat 
 	$tryAgain_b:=False:C215

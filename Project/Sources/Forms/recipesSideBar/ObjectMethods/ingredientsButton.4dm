@@ -1,5 +1,7 @@
 setNavArrow (4)
 updateLookupListbox ("Ingredients")
+//updated by: Al Mahdi
+var $l; $t; $r; $b; $tt; $i : Integer
 
 Case of 
 	: (Form:C1466.lastSelected=1) | (Form:C1466.lastSelected=5)
@@ -25,7 +27,6 @@ If (Form:C1466.expandListbox)
 	OBJECT SET VISIBLE:C603(*;"lookup_lb";True:C214)
 	OBJECT SET VISIBLE:C603(*;"rectLookupBy";True:C214)
 	
-	C_LONGINT:C283($l;$t;$r;$b;$tt;$i)
 	OBJECT GET COORDINATES:C663(*;"ingredientsButton";$l;$t;$r;$b)
 	
 	OBJECT GET COORDINATES:C663(*;"rectLookupBy";$l;$tt;$r;$b)

@@ -173,7 +173,8 @@
 					"doubleClickInEmptyAreaAction": "addSubrecord",
 					"selectionMode": "multiple",
 					"printFrame": "variable",
-					"borderStyle": "system"
+					"borderStyle": "system",
+					"method": "ObjectMethods/detail_SF.4dm"
 				},
 				"toolbar_SF": {
 					"type": "subform",
@@ -214,5 +215,9 @@
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

@@ -1,4 +1,5 @@
 //%attributes = {"invisible":true}
+//Updated by: Al Mahdi
 
   // ----------------------------------------------------
   // User name (OS): Add Komoncharoensiri
@@ -10,13 +11,15 @@
   //    in the Preview form or Printable form.
   //
   // ----------------------------------------------------
+var cookingTimePrn_t; ingredientsPrn_t; cookingStepsPrn_t; $item_t : Text
+var $hour_l; $min_l; $i : Integer
+var $lowerCase_b : Boolean
+var $cookingDescSteps_at : Collection
 
-C_TEXT:C284(cookingTimePrn_t;ingredientsPrn_t;cookingStepsPrn_t;$item_t)
 cookingTimePrn_t:=""
 ingredientsPrn_t:=""
 cookingStepsPrn_t:=""
 
-C_LONGINT:C283($hour_l;$min_l;$i)
 $hour_l:=Int:C8([Recipes:3]CookTime:5/60)
 $min_l:=Int:C8([Recipes:3]CookTime:5%60)
 If ($hour_l>0)
@@ -29,7 +32,6 @@ If ($min_l>0)
 	cookingTimePrn_t:=cookingTimePrn_t+String:C10($min_l)+" Min"
 End if 
 
-C_BOOLEAN:C305($lowerCase_b)
 RELATE MANY:C262([Recipes:3]ID:1)
 ORDER BY:C49([Ingredients:4];[Ingredients:4]ID:1;>)
 For ($i;1;Records in selection:C76([Ingredients:4]))
@@ -59,12 +61,11 @@ For ($i;1;Records in selection:C76([Ingredients:4]))
 	NEXT RECORD:C51([Ingredients:4])
 End for 
 
-
-ARRAY TEXT:C222($cookingDescSteps_at;0)
 If (Not:C34(OB Is empty:C1297([Recipes:3]CookingSteps:11)))
-	OB GET ARRAY:C1229([Recipes:3]CookingSteps:11;"steps";$cookingDescSteps_at)
-	For ($i;1;Size of array:C274($cookingDescSteps_at))
-		cookingStepsPrn_t:=cookingStepsPrn_t+String:C10($i)+". "+$cookingDescSteps_at{$i}
+	$cookingDescSteps_at:=OB Get:C1224([Recipes:3]CookingSteps:11; "steps"; Is collection:K8:32)
+	
+	For ($i; 1; $cookingDescSteps_at.length)
+		cookingStepsPrn_t:=cookingStepsPrn_t+String:C10($i)+". "+$cookingDescSteps_at[$i-1]
 		Case of 
 			: ($i<Size of array:C274($cookingDescSteps_at))
 				cookingStepsPrn_t:=cookingStepsPrn_t+"\n\n"

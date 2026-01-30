@@ -1,3 +1,7 @@
+//Updated by: Al Mahdi
+var $l; $t; $r; $b : Integer
+var $isVisible_b : Boolean
+
 Case of 
 	: (Form event code:C388=-1)
 		  // update recipe count
@@ -18,7 +22,6 @@ Case of
 		OBJECT GET COORDINATES:C663(*;"sidebar_SF";$l;$t;$r;$b)
 		OBJECT SET COORDINATES:C1248(*;"sidebar_SF";$l;$t;$l+310;$b)
 		
-		C_BOOLEAN:C305($isVisible_b)
 		If (Form:C1466.recipe.ent=Null:C1517)
 			$isVisible_b:=False:C215
 			EXECUTE METHOD IN SUBFORM:C1085("detail_SF";"toggleVisibility";*;"cookingTimePrn_t";$isVisible_b)

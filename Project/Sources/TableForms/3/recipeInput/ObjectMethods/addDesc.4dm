@@ -1,6 +1,6 @@
 If (Form:C1466.cookingStep#"")
 	  // Update steps in listbox
-	C_OBJECT:C1216($newStep_o)
+	var $newStep_o : Object
 	$newStep_o:=New object:C1471
 	$newStep_o.stepNum:=Form:C1466.cookingSteps.length+1
 	$newStep_o.stepDes:=Form:C1466.cookingStep

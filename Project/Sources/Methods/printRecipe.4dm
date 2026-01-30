@@ -5,9 +5,12 @@
   //    This method print the current loaded recipe.
   //
   // ----------------------------------------------------
+//Updated by: Al Mahdi
 
-C_BOOLEAN:C305($end_b)
-C_LONGINT:C283($hpaper_l;$wpaper_l)
+var $end_b : Boolean
+var $hpaper_l; $wpaper_l : Integer
+var $bestWidth_l; $bestHeight_l : Integer
+var $l; $t; $r; $b; $bb; $newtop_l; $newRectTop_l; $newBottom_l : Integer
 
 If (Selected record number:C246([Recipes:3])>0)
 	GOTO SELECTED RECORD:C245([Recipes:3];Selected record number:C246([Recipes:3]))
@@ -23,8 +26,6 @@ If (Selected record number:C246([Recipes:3])>0)
 			
 			$end_b:=Print object:C1095(*;"fieldPhoto")
 			
-			C_LONGINT:C283($bestWidth_l;$bestHeight_l)
-			C_LONGINT:C283($l;$t;$r;$b;$bb;$newtop_l;$newRectTop_l;$newBottom_l)
 			
 			  // Make sure the title object fits
 			OBJECT GET COORDINATES:C663(*;"recipeTitle";$l;$t;$r;$b)

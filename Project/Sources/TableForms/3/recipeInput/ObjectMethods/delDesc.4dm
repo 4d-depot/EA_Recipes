@@ -1,4 +1,4 @@
-C_LONGINT:C283($stepNum_l)
+var $stepNum_l : Integer
 $stepNum_l:=Form:C1466.selectedStepPos
 
 If ($stepNum_l>0)
@@ -8,9 +8,9 @@ If ($stepNum_l>0)
 		Form:C1466.ent.CookingSteps.steps.remove($stepNum_l-1)  // Delete step from entity
 		Form:C1466.cookingStep:=""
 		
-		  // Reset cooking step numbers
-		C_LONGINT:C283($i)
-		C_OBJECT:C1216($step)
+		// Reset cooking step numbers
+		var $i : Integer
+		var $step : Object
 		$i:=1
 		
 		For each ($step;Form:C1466.cookingSteps)
