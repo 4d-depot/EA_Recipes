@@ -1,16 +1,16 @@
 //%attributes = {"invisible":true}
 //Updated by: Al Mahdi
 
-  // ----------------------------------------------------
-  // User name (OS): Add Komoncharoensiri
-  // Date and time: 08/03/16, 15:02:16
-  // ----------------------------------------------------
-  // Method: loadRecipeForPrinting
-  // Description
-  //    This method prepare the current recipe data to be shown
-  //    in the Preview form or Printable form.
-  //
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// User name (OS): Add Komoncharoensiri
+// Date and time: 08/03/16, 15:02:16
+// ----------------------------------------------------
+// Method: loadRecipeForPrinting
+// Description
+//    This method prepare the current recipe data to be shown
+//    in the Preview form or Printable form.
+//
+// ----------------------------------------------------
 var cookingTimePrn_t; ingredientsPrn_t; cookingStepsPrn_t; $item_t : Text
 var $hour_l; $min_l; $i : Integer
 var $lowerCase_b : Boolean
@@ -33,8 +33,8 @@ If ($min_l>0)
 End if 
 
 RELATE MANY:C262([Recipes:3]ID:1)
-ORDER BY:C49([Ingredients:4];[Ingredients:4]ID:1;>)
-For ($i;1;Records in selection:C76([Ingredients:4]))
+ORDER BY:C49([Ingredients:4]; [Ingredients:4]ID:1; >)
+For ($i; 1; Records in selection:C76([Ingredients:4]))
 	$lowerCase_b:=False:C215
 	If ([Ingredients:4]Quantity:4>0)
 		ingredientsPrn_t:=ingredientsPrn_t+String:C10([Ingredients:4]Quantity:4)+" "
@@ -67,9 +67,9 @@ If (Not:C34(OB Is empty:C1297([Recipes:3]CookingSteps:11)))
 	For ($i; 1; $cookingDescSteps_at.length)
 		cookingStepsPrn_t:=cookingStepsPrn_t+String:C10($i)+". "+$cookingDescSteps_at[$i-1]
 		Case of 
-			: ($i<Size of array:C274($cookingDescSteps_at))
+			: ($i<$cookingDescSteps_at.length)
 				cookingStepsPrn_t:=cookingStepsPrn_t+"\n\n"
-			: ($i=Size of array:C274($cookingDescSteps_at))
+			: ($i=$cookingDescSteps_at.length)
 				cookingStepsPrn_t:=cookingStepsPrn_t
 			Else 
 				cookingStepsPrn_t:=cookingStepsPrn_t+"\n"
